@@ -24,11 +24,11 @@ public class InventoryToggle : MonoBehaviour
         isOpen = !isOpen;
         inventoryPanel.SetActive(isOpen);
 
-        // РєСѓСЂСЃРѕСЂ
+        // курсор
         Cursor.visible = isOpen;
         Cursor.lockState = isOpen ? CursorLockMode.None : CursorLockMode.Locked;
 
-        // РїР°СѓР·Р° (РїРѕ Р¶РµР»Р°РЅРёСЋ)
+        // пауза (по желанию)
         Time.timeScale = isOpen ? 0f : 1f;
     }
 }
