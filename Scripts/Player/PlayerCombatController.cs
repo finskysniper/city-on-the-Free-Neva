@@ -54,16 +54,16 @@ public class PlayerCombatController : MonoBehaviour
             return;
 
         // 🔫 Доставать / убирать оружие — ВСЕГДА
-        if (Keyboard.current.digit1Key.wasPressedThisFrame)
-        {
-            weapon.ToggleWeapon();
-        }
+        //if (Keyboard.current.digit1Key.wasPressedThisFrame)
+        //{
+        //    weapon.ToggleWeapon();
+        //}
 
         // 🔄 Перезарядка — всегда (оружие само решит)
-        if (Keyboard.current.rKey.wasPressedThisFrame)
-        {
-            weapon.Reload();
-        }
+       // if (Keyboard.current.rKey.wasPressedThisFrame)
+       //{
+       //     weapon.Reload();
+       // }
 
         // 🔥 Стрельба — только в боевом режиме
         if (isCombatMode &&
